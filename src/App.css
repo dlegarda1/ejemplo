@@ -7,6 +7,23 @@
   pointer-events: none;
 }
 
+.Contador{
+  font-size: 2em;
+  color: #61dafb;
+  background-color: brown;
+  padding: auto;
+  margin: auto;
+  border-radius: 10px;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

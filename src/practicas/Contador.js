@@ -1,18 +1,19 @@
 import React,{useState} from "react";
 
-function Contador(){
-    const[contador,setContador]=useState(0);
+function Contador(props){
+    const { inicial = 0, incremento = 1, decremento=1 } = props;
+    const[contador,setContador]=useState(inicial);
 
     const incrementar=()=>{
-        setContador(contador+1);
+        setContador(contador+parseInt(incremento));
     }
 
     const decrementar=()=>{
-        setContador(contador-1);
+        setContador(contador-parseInt(decremento));
     }
 
     return(
-        <div>
+        <div className="Contador">
             <h1>Contador: {contador}</h1>
             <button onClick={incrementar}>Incrementar</button>
             <button onClick={decrementar}>Decrementar</button>

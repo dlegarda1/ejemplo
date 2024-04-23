@@ -19,7 +19,8 @@ function App() {
       <Saludo2/>
       <Producto nombre="Tablet" descripcion="Es un elemento electrónico" precio={500*3}/>
       <Producto nombre="Silla" imagen="/logo192.png" alternativo="imagen de silla" descripcion="Es un elemento de oficina" precio={100}/>
-      <Contador/>      
+      <Contador inicial={20} decremento="12"/>
+      <Contador inicial={10}/>      
     </div>
   );
 }
