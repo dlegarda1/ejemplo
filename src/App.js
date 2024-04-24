@@ -1,26 +1,19 @@
-//import logo from './logo.svg';
 import './App.css';
-import Saludo from './practicas/saludo';
-import Saludo2 from './practicas/Saludo2';
-import Producto from './practicas/Producto';
 import Contador from './practicas/Contador';
-
-const elemento=<h1>Hola Mundo</h1>
-const name='Jorge'
-const elemento2=<h2>Hola {name}</h2>
+import Contclick from './practicas/Contclick';
+import Titulo from './practicas/Titulo';
+import Contador2 from './practicas/Contador2';
 
 
 function App() {
   return (
     <div className="App">
-      {elemento}
-      {elemento2}
-      <Saludo/>
-      <Saludo2/>
-      <Producto nombre="Tablet" descripcion="Es un elemento electrónico" precio={500*3}/>
-      <Producto nombre="Silla" imagen="/logo192.png" alternativo="imagen de silla" descripcion="Es un elemento de oficina" precio={100}/>
-      <Contador inicial={20} decremento="12"/>
-      <Contador inicial={10}/>      
+     <Contador inicial="10" incremento="2" decremento="3"/>
+     <Contador inicial="2" incremento="12" decremento="4"/>
+     <Contador/>
+     <Contclick/>
+     <Titulo/>
+     <Contador2/>
     </div>
   );
 }
