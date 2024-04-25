@@ -1,13 +1,11 @@
 import './App.css';
-import Futbol from './practicas/Futbol';
-import Formulario from './practicas/Formulario';
+import Rutas from './rutas';
 
 
 function App() {
   return (
     <div className="App">
-    <Futbol/>
-    <Formulario/>   
+      <Rutas/>
     </div>
   );
 }

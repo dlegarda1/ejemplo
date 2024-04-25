@@ -39,7 +39,7 @@ function Formulario(){
          <input name="nombre" value={entradas.nombre||""} type="text" placeholder="Nombre"
         onChange={(evento)=>manejoCambios(evento)}></input>
         <input name="edad" type="number" value={entradas.edad||""} onChange={(evento)=>manejoCambios(evento)}></input>
-        <input type="submit" value="Enviar"/>
+        
         <select name="auto" value={entradas.auto||""} onChange={(evento)=>manejoCambios(evento)} >
            <option value="Ford">Ford</option>
            <option value="Chevrolet">Chevrolet</option>
@@ -48,10 +48,12 @@ function Formulario(){
         </select> 
         <input list="frutero" name="fruta" onChange={(evento)=>manejoCambios(evento)} value={entradas.fruta||""}/>
             <datalist id="frutero">
-                {frutas.map((frut, index) => (
+                {frutas.map((frut,index) => (
                     <option key={index} value={frut} />
                 ))}
             </datalist>
+
+        <button type="submit">Enviar</button>
 
     </form>
     
