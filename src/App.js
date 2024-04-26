@@ -4,8 +4,8 @@ import Rutas from './rutas';
 
 function App() {
   return (
-    <div className="App">
-      <Rutas/>
+    <div className="App">      
+     <Rutas/>
     </div>
   );
 }

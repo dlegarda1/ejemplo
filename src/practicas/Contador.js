@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 
+
 function Contador(props){
     const { inicial = 0, incremento = 1, decremento=1 } = props;
     const[contador,setContador]=useState(parseInt(inicial));
